@@ -1,0 +1,634 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppin', sans-serif;
+}
+
+ :root {
+    --primary: #3dcfd3;
+    --dark: #161616;
+    --light: #ffffff;
+    --ldark: #898989;
+    --llight: #f2f2f2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: var(--dark);
+    position: sticky;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+nav .main a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: var(--primary);
+    font-family: 'poppin', sans-serif;
+}
+
+nav .main a:hover {
+    font-size: 17px;
+    border-bottom: 3px solid var(--primary);
+    font-weight: 500;
+}
+
+nav .contact {
+    width: 100px;
+    height: 35px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all .2s ease;
+}
+
+nav .contact:hover {
+    width: 105px;
+    height: 36px;
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+nav .contact a {
+    color: var(--light);
+    text-decoration: none;
+    padding: 3px 5px;
+}
+
+#header {
+    background-color: var(--dark);
+    display: flex;
+    flex-wrap: wrap;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+}
+
+.hleft {
+    flex-basis: 50%;
+}
+
+.hleft img {
+    width: 350px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: 20px auto;
+}
+
+.hright {
+    flex-basis: 50%;
+}
+
+.hright h4 {
+    color: var(--light);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 400px;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.hright h5 {
+    color: var(--light);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 320px;
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 2;
+}
+
+.hright h3 {
+    color: var(--light);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 360px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.hbtn {
+    position: absolute;
+    top: 95px;
+    left: -1px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all .2s ease;
+    color: var(--light);
+    font-size: 14px;
+    background-color: var(--primary);
+}
+
+.hbtn:hover {
+    width: 130px;
+    height: 36px;
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+.animated-text {
+    color: var(--primary);
+    position: absolute;
+    top: 44%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: var(--dark);
+    padding: 0 40px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.line {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.line:first-child {
+    animation: anim 6s infinite;
+}
+
+@keyframes anim {
+    0% {
+        margin-top: 0;
+    }
+    16% {
+        margin-top: -60px;
+    }
+    33% {
+        margin-top: -120px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    66% {
+        margin-top: -120px;
+    }
+    82% {
+        margin-top: -60px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+    margin: 80px 80px;
+}
+
+.aleft {
+    flex-basis: 50%;
+}
+
+.aleft img {
+    display: flex;
+    width: 350px;
+    justify-content: right;
+    align-items: right;
+    margin-left: 235px;
+}
+
+.aright {
+    flex-basis: 50%;
+    align-items: center;
+    margin: auto auto;
+    font-family: 'poppin', sans-serif;
+}
+
+.aright h1 span {
+    color: var(--primary);
+    font-weight: 6pp;
+}
+
+.aright h3 {
+    font-weight: 5pp;
+}
+
+.aright p {
+    margin-right: 110px;
+    color: var(--ldark);
+}
+
+.abtn {
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all .2s ease;
+    color: var(--dark);
+    font-size: 14px;
+    background-color: var(--primary);
+}
+
+.abtn:hover {
+    width: 130px;
+    height: 36px;
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+.sname {
+    font-family: 'poppin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px auto;
+    color: var(--primary);
+    display: block;
+    text-align: center;
+}
+
+.sname h1 span {
+    color: var(--dark);
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 50px
+}
+
+#services img {
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+#services h2 {
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+#services p {
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+#services .s1 {
+    flex-basis: 30%;
+    padding: 30px 40px;
+    margin: 10px 20px;
+    background-color: var(--primary);
+}
+
+#services .s1:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#services .s2 {
+    flex-basis: 30%;
+    padding: 30px 40px;
+    margin: 10px 20px;
+    background-color: var(--primary);
+}
+
+#services .s2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#services .s3 {
+    flex-basis: 30%;
+    padding: 30px 40px;
+    margin: 10px 20px;
+    background-color: var(--primary);
+}
+
+#services .s3:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#services .s4 {
+    flex-basis: 30%;
+    padding: 30px 40px;
+    margin: 10px 20px;
+    background-color: var(--primary);
+}
+
+#services .s4:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#services .s5 {
+    flex-basis: 30%;
+    padding: 30px 40px;
+    margin: 10px 20px;
+    background-color: var(--primary);
+}
+
+#services .s5:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#services .s6 {
+    flex-basis: 30%;
+    padding: 30px 40px;
+    margin: 10px 20px;
+    background-color: var(--primary);
+}
+
+#services .s6:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cname {
+    font-family: 'poppin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--primary);
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.cname h1 span {
+    color: var(--dark);
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--llight);
+}
+
+#clients img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#clients img:hover {
+    width: 160px;
+    box-shadow: 0px 0px 5px var(--light);
+}
+
+#clients h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#clients .left {
+    flex-basis: 30%;
+    padding: 50px 80px;
+}
+
+#clients .middle {
+    flex-basis: 30%;
+    padding: 50px 80px;
+}
+
+#clients .right {
+    flex-basis: 30%;
+    padding: 50px 80px;
+}
+
+.bname {
+    font-family: 'poppin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--primary);
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.bname h1 span {
+    color: var(--dark);
+}
+
+#blogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#blogs img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#blogs h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: var(--dark);
+    padding: 5px 10px;
+}
+
+#blogs p {
+    margin-bottom: 3px;
+    color: var(--llight);
+    padding: 5px 10px;
+}
+
+#blogs .ba {
+    margin-bottom: 5px;
+}
+
+#blogs a {
+    text-decoration: none;
+    color: var(--light);
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    margin-left: 5px;
+}
+
+#blogs .bleft {
+    flex-basis: 20%;
+    background-color: var(--ldark);
+    margin-right: 40px;
+}
+
+#blogs .bleft:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#blogs .bmiddle {
+    flex-basis: 20%;
+    background-color: var(--ldark);
+    margin-right: 40px;
+}
+
+#blogs .bmiddle:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#blogs .bright {
+    flex-basis: 20%;
+    background-color: var(--ldark);
+}
+
+#blogs .bright:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cccname {
+    font-family: 'poppin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--primary);
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: -20px;
+}
+
+.cccname h1 span {
+    color: var(--dark);
+}
+
+#contact .ccname {
+    font-family: 'poppin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--primary);
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#contact .ccname h1 span {
+    color: var(--light);
+}
+
+#contact {
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 70% 12%, 100% 0%, 100% 100%, 0 100%);
+    margin-bottom: 0px;
+}
+
+#contact .call {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 600;
+    color: var(--light);
+}
+
+#contact .call span {
+    font-weight: 300;
+}
+
+#contact .cform {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .cform form .fname {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+#contact .cform form :placeholder-shown {
+    padding: 0px 10px;
+}
+
+#contact .cform form .lname {
+    width: 390px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#contact .cform form .email {
+    width: 800px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#contact .cform form .msg {
+    width: 800px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+
+/* #contact .cform form  */
+
+.abtn {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 0px;
+    transition: all .2s ease;
+    margin-bottom: 10px;
+    color: var(--dark);
+    font-size: 15px;
+    background-color: var(--primary);
+}
+
+.abtn:hover {
+    width: 130px;
+    height: 36px;
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+#footer {
+    background-color: var(--primary);
+}
+
+#footer .fimg {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: invert();
+    padding: 20px 10px;
+}
+
+#footer .fsm {
+    display: flex;
+    justify-content: center;
+}
+
+#footer .fsm img {
+    width: 30px;
+    margin-right: 50px;
+}
+
+#footer .ftext {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 100;
+}

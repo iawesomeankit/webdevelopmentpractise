@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 500px;
+    width: 1000px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#main {
+    text-align: center;
+    margin: 20px;
+}
+
+#textt {
+    align-items: center;
+}
+
+label {
+    align-items: center;
+    text-align: center;
+}
